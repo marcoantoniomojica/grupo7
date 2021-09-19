@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DreamSchedulers</title>
+</head>
+<body align="center">
+    <p>
+        <b>Equipo de Trabajo 7 - Ciclo 3 - Grupo 52</b>
+        <h1>Dream Schedulers</h1>
+    </p>
+    <h2>Ingreso de Datos</h2>
+    <form name="formulario1">
+        <strong><label for="cedula">Cédula:</label></strong>
+        <input type="text" name="cedula" />
+        <strong><label for="nombre">Nombres Apellidos: </label></strong>
+        <input type="text" name="nombre" />
+        <strong>
+            <label>Sexo: </strong>
+                <input type="radio" name="sexo" value="Masculino">Masculino
+                <input type="radio" name="sexo" value="Femenino">Femenino
+            </label>
+        <br><br>
+        <strong><label for="correo">Usuario: </label></strong>
+        <input type="text" name="usuario" placeholder="ejemplo88"/>
+
+        <strong><label for="correo">Contraseña: </label></strong>
+        <input type="password" name="contrasena" placeholder="6 - 8 carácteres"/>
+        <strong><label for="correo">Contraseña: </label></strong>
+        <input type="password" name="contrasena2" placeholder="6 - 8 carácteres"/>
+
+        <br><br>
+        <strong><label for="correo">Correo Electrónico: </label></strong>
+        <input type="email" name="correo" placeholder="ejemplo@gmail.com" />
+        <strong><label for="telefono">Teléfono: </label></strong>
+        <input type="text" name="telefono" />
+        <strong><label for="direccion">Dirección: </label></strong>
+        <input type="text" name="direccion" />
+        <br>
+        <br>
+        <strong><label for="talla">Ingrese su Estatura: </label></strong>
+        <input type="number" name="talla" step="0.1" min="0" max="3" placeholder="#,##"/>
+        <strong><label for="peso">Ingrese su Peso: </label></strong>
+        <input type="number" name="peso" step="1" min="0" max="500"  placeholder="##"/>
+        <br>
+        <br>
+        <input type="reset" value="Limpiar" />
+        <input type="submit" value="Enviar" />
+        <br>
+    </form>
+</body>
+</html>
