@@ -1,50 +1,77 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DreamSchedulers</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
-<body align="center">
-    <p>
-        <b>Equipo de Trabajo 7 - Ciclo 3 - Grupo 52</b>
+
+<body class="container">
+    <header class="header">
+        <p>
+            <b>Equipo de Trabajo 7 - Ciclo 3 - Grupo 52</b>
         <h1>Dream Schedulers</h1>
-    </p>
-    <h2>Ingreso de Datos</h2>
-    <form action="" name="formulario1">
-        <strong><label for="cedula">Cédula:</label></strong>
-        <input type="text" name="cedula" />
-        <strong><label for="nombre">Nombres Apellidos: </label></strong>
-        <input type="text" name="nombre" />
-        <strong>
-            <label>Sexo: </strong>
-                <input type="radio" name="sexo" value="Masculino">Masculino
-                <input type="radio" name="sexo" value="Femenino">Femenino
-            </label>
-        <br><br>
-        <strong><label for="correo">Usuario: </label></strong>
-        <input type="text" name="usuario" placeholder="ejemplo88"/>
-        <strong><label for="correo">Contraseña: </label></strong>
-        <input type="password" name="contrasena" placeholder="6 - 8 carácteres"/>
-        <strong><label for="correo">Contraseña: </label></strong>
-        <input type="password" name="contrasena2" placeholder="6 - 8 carácteres"/>
-        <br><br>
-        <strong><label for="correo">Correo Electrónico: </label></strong>
-        <input type="email" name="correo" placeholder="ejemplo@gmail.com" />
-        <strong><label for="telefono">Teléfono: </label></strong>
-        <input type="text" name="telefono" />
-        <strong><label for="direccion">Dirección: </label></strong>
-        <input type="text" name="direccion" />
-        <br><br>
-        <strong><label for="talla">Ingrese su Estatura: </label></strong>
-        <input type="number" name="talla" step="0.1" min="0" max="3" placeholder="#,##"/>
-        <strong><label for="peso">Ingrese su Peso: </label></strong>
-        <input type="number" name="peso" step="1" min="0" max="500"  placeholder="##"/>
-        <br><br>
-        <input type="reset" value="Limpiar" />
-        <input type="submit" value="Enviar" />
+        </p>
+    </header>
+    <nav class="navbar">
+        <a class="navbar-element" href="#" >Inicio</a>
+        <a class="navbar-element" href="#" >Nosotros</a>
+        <a class="navbar-element"href="#" >Contanto</a>
+    </nav>
+    <aside class="sidebar">
+        <h2>Cómo balancear los alimentos y la actividad física para un peso saludable</h2>
+        <p>Un estilo de vida saludable incluye una buena nutrición y actividad física adecuada. Si su peso corporal
+        no ha cambiado durante varios meses, las calorías que consume y las calorías que quema de la actividad física
+        están equilibradas. Si necesita subir o bajar de peso, considere cambiar su patrón dietético y su nivel de
+        actividad física para lograr su objetivo.</p>
         <br>
-    </form>
+        <img src="yoga.jpg">
+    </aside>
+    <article class="main">
+        <h2>Calculadora del IMC</h2>
+        <form name="formulario1">
+            <strong><label for="cedula">Cédula:</label></strong>
+            <input type="text" name="cedula" />
+            <strong><label for="nombre">Nombres Apellidos: </label></strong>
+            <input type="text" name="nombre" />
+            <strong>
+                <label>Sexo: </strong>
+            <input type="radio" name="sexo" value="Masculino">Masculino
+            <input type="radio" name="sexo" value="Femenino">Femenino
+            </label>
+            <br><br>
+            <strong><label for="correo">Usuario: </label></strong>
+            <input type="text" name="usuario" placeholder="ejemplo88" />
+
+            <strong><label for="correo">Contraseña: </label></strong>
+            <input type="password" name="contrasena" placeholder="6 - 8 carácteres" />
+            <strong><label for="correo">Contraseña: </label></strong>
+            <input type="password" name="contrasena2" placeholder="6 - 8 carácteres" />
+
+            <br><br>
+            <strong><label for="correo">Correo Electrónico: </label></strong>
+            <input type="email" name="correo" placeholder="ejemplo@gmail.com" />
+            <strong><label for="telefono">Teléfono: </label></strong>
+            <input type="text" name="telefono" />
+            <strong><label for="direccion">Dirección: </label></strong>
+            <input type="text" name="direccion" />
+            <br>
+            <br>
+            <strong><label for="talla">Ingrese su Estatura: </label></strong>
+            <input type="number" name="talla" step="0.1" min="0" max="3" placeholder="#,##" />
+            <strong><label for="peso">Ingrese su Peso: </label></strong>
+            <input type="number" name="peso" step="1" min="0" max="500" placeholder="##" />
+            <br>
+            <br>
+            <input type="reset" value="Limpiar" />
+            <input type="submit" value="Enviar" />
+            <br>
+        </form>
+    </article>
+    <footer class="footer">@2021 Copyright - all Rights Reserved</footer>
 </body>
+
 </html>
