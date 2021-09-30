@@ -4,6 +4,35 @@
     padding: 0;
 }
 
+img {
+ width: 250px;
+ margin-top: none;
+ margin-left: none;
+}
+
+li {
+    float: left;
+    list-style: none;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    margin-top: 60px;
+    margin-right: 50px;
+    float: right;
+    font-family: fantasy;
+    font-size: 16px;
+    color: #D087FA;
+}
+
+.navbar :hover {
+    color: black;
+}
+
 .formulario {
     width: 400px;
     background-color: #24303c;
@@ -18,7 +47,7 @@
 .controls {
     width: 100%;
     background-color: #24303c;
-    padding: 10px;
+    padding: 5px;
     border-radius: 4px;
     margin-bottom: 16px;
     border: 1px solid #1f53c5;
@@ -57,25 +86,10 @@ body {
 
 .header {
     grid-area: header;
-    background-color: royalblue;
+    margin-left: none;
+    background-color: whitesmoke;
 }
 
-.navbar-element {
-    display: inline-block;
-    background: gray;
-    color: honeydew;
-    padding: 10px 30px;
-    text-decoration: none;
-}
-
-.navbar-element:hover {
-    background: burlywood;
-}
-
-.navbar {
-    grid-area: navbar;
-    background-color: rgb(38, 38, 39);
-}
 
 .sidebar {
     grid-area: sidebar;
@@ -84,7 +98,7 @@ body {
 
 .main {
     grid-area: main;
-    background-color: #24303c;
+    background-color: gray;
 }
 
 .footer {
@@ -97,7 +111,6 @@ body {
     gap: 10px;
     grid-template-areas:
     "header"
-    "navbar"
     "main"
     "sidebar"
     "footer";
@@ -106,10 +119,9 @@ body {
 @media (min-width: 600px){
    .container {
     grid-template-columns: 200px auto;
-    grid-template-rows: 100px 50px auto 100px;
+    grid-template-rows: 200px auto 100px;
     grid-template-areas:
     "header header"
-    "navbar navbar"
     "sidebar main"
     "footer footer"; 
    } 
@@ -118,11 +130,10 @@ body {
 @media (min-width: 900px){
     .container {
      grid-template-columns: 300px auto ;
-     grid-template-rows: 100px 50px auto 100px;
+     grid-template-rows: 200px auto 100px;
      grid-template-areas:
      "header header header"
-     "navbar navbar navbar"
-     "sidebar sidebar main "
+     "sidebar main main "
      "footer footer footer"; 
     } 
  }
