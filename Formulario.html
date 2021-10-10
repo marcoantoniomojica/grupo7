@@ -7,6 +7,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DreamSchedulers</title>
     <link rel="stylesheet" href="estilos.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Clasificacion', 'Cantidad'],
+          ['Bajo peso', 4],
+          ['Normal', 14],
+          ['Sobrepeso', 32],
+          ['Obesidad', 50]
+        ]);
+
+        var options = {
+          title: 'Imc en colombia',
+          is3D: true,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('grafico'));
+
+        chart.draw(data, options);
+      }
+    </script>
 </head>
 
 <body class="container">
@@ -23,6 +48,7 @@
     </header>
     
     <aside class="sidebar">
+        <div id="grafico"></div>
         <h2>Cómo balancear los alimentos y la actividad física para un peso saludable</h2>
         <p>Un estilo de vida saludable incluye una buena nutrición y actividad física adecuada. Si su peso corporal
         no ha cambiado durante varios meses, las calorías que consume y las calorías que quema de la actividad física

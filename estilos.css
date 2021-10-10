@@ -96,6 +96,7 @@ body {
     background-color: thistle;
 }
 
+
 .main {
     grid-area: main;
     background-color: gray;
@@ -118,7 +119,7 @@ body {
 
 @media (min-width: 600px){
    .container {
-    grid-template-columns: 200px auto;
+    grid-template-columns: 270px auto;
     grid-template-rows: 200px auto 100px;
     grid-template-areas:
     "header header"
@@ -129,7 +130,7 @@ body {
 
 @media (min-width: 900px){
     .container {
-     grid-template-columns: 300px auto ;
+     grid-template-columns: 270px auto ;
      grid-template-rows: 200px auto 100px;
      grid-template-areas:
      "header header header"
